@@ -1,0 +1,23 @@
+[project]
+name = "face-verification-app-with-fhe"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "heitor",email = "heitor.nolla@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12 <4.0"
+dependencies = [
+    "opencv-python (>=4.12.0.88,<5.0.0.0)",
+    "pillow (>=11.3.0,<12.0.0)",
+    "taskipy (>=1.14.1,<2.0.0)",
+    "black (>=25.1.0,<26.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = "black ."
